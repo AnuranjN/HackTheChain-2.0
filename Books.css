@@ -1,0 +1,168 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+body{
+    min-height: 100vh;
+    overflow-x: hidden;
+    background-position: center;
+    background-size: cover;
+}
+
+li{
+    list-style: none;
+    color: #fff;
+    font-size: 1.4em;
+    
+
+}
+li:hover{
+    scale: 1.1;
+    color: orange;
+    
+
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+a:hover{
+    color: orange;
+}
+
+header{
+    position: relative;
+    padding: 0 2rem;
+    background-color: black;
+    
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height:60px;
+    margin: 0 auto;
+}
+
+.navbar .logo a{
+    font: 1.5rem;
+    font-weight: bold;
+    display: none;
+}
+.navbar .links {
+    display: flex;
+    gap: 2rem;
+
+    
+}
+.navbar .toggle{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+.action-btn{
+    
+    color: #fff;
+    padding: 5px;
+    border-radius: 40px;
+    border: 2px solid white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+    
+}
+.action-btn:hover{
+    scale: 1.05;
+    color: #fff;
+}
+
+.action-btn:active{
+    scale: 0.95;
+}
+/*dropdown*/
+.dropdown_menu{
+    position: absolute;
+    right: 2rem;
+    height: 0;
+    top: 60px;
+    width: 300px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    display: none;
+    transition: height 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+
+}
+.dropdown_menu li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0.7rem;
+}
+
+.dropdown_menu.open{
+    height: 240px;
+}
+
+.banner{
+    height: 340px;
+    background-image: url(Images/book-banner.jpg);
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.ads{
+   
+    
+    
+    margin-left: 10%;
+    margin-right: 10%;
+    
+    overflow: hidden;
+    width: 80%;
+}
+
+.ads .groups {
+    
+    display: flex;
+    
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+    
+    
+    
+}
+
+.ads .groups .add-box{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 300px;
+    height: 360px;
+    backdrop-filter: blur(20px);
+    margin: 20px 40px;
+    transition: transform .2s;
+}
+
+.ads .groups .add-box:hover{
+    transform: scale(1.1)
+}
+.ads .groups .add-box img{
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+}
+
+#empty{
+    display: none;
+}
